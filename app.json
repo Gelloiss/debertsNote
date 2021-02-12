@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DebertsNote",
-    "slug": "Запись очков деберц",
+    "name": "Deberts Note",
+    "slug": "DebertsNote",
     "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
