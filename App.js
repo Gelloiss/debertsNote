@@ -18,7 +18,7 @@ function HomeScreen({navigation}) {
           style={[styles.menuHorizontalButton]}
           onPress={() => navigation.navigate('teamVSteam')}>
           <Text style={styles.menuHorizontalText}>
-            &#x30;
+            &#x1f300;
           </Text>
           <Text style={styles.menuSigna}>
             две команды
@@ -28,7 +28,9 @@ function HomeScreen({navigation}) {
         <TouchableOpacity
           style={[styles.menuHorizontalButton]}
           onPress={() => navigation.navigate('oneVSone')}>
-          <FontAwesome name="user" style={styles.menuHorizontalText} />
+          <Text style={styles.menuHorizontalText}>
+            &#x1f302;
+          </Text>
           <Text style={styles.menuSigna}>
             два игрока
           </Text>
@@ -39,7 +41,10 @@ function HomeScreen({navigation}) {
         style={styles.menuButton}
         onPress={() => navigation.navigate('oneVSoneVSone')}>
         <Text style={styles.menuText}>
-          ТРИ ИГРОКА
+          &#x1f304;
+        </Text>
+        <Text style={styles.menuSigna}>
+          три игрока
         </Text>
       </TouchableOpacity>
 
@@ -47,7 +52,9 @@ function HomeScreen({navigation}) {
         <TouchableOpacity
           style={styles.menuHorizontalButton}
           onPress={() => navigation.navigate('about')}>
-          <FontAwesome name="info-circle" style={styles.menuHorizontalText} />
+          <Text style={styles.menuHorizontalText}>
+            &#x1f303;
+          </Text>
           <Text style={styles.menuSigna}>
             информация
           </Text>
@@ -56,7 +63,9 @@ function HomeScreen({navigation}) {
         <TouchableOpacity
           style={styles.menuHorizontalButton}
           onPress={() => navigation.navigate('settings')}>
-          <FontAwesome name="cog" style={styles.menuHorizontalText} />
+          <Text style={styles.menuHorizontalText}>
+            &#x1f301;
+          </Text>
           <Text style={styles.menuSigna}>
             настройки
           </Text>
@@ -118,7 +127,7 @@ const styles = StyleSheet.create({
   menuHorizontalText: {
     flex: 4,
     color: '#ecf0f1',
-    fontSize: RFPercentage(7),
+    fontSize: RFPercentage(12),
     textAlign: 'center',
     textAlignVertical: 'center',
     fontFamily: 'Icon',
@@ -135,18 +144,18 @@ const styles = StyleSheet.create({
 
   menuButton: {
     width: '100%',
-    aspectRatio: 3.5,
+    aspectRatio: 3,
     backgroundColor: '#30475e',
     marginBottom: marginButton,
   },
 
   menuText: {
-    flex: 1,
+    flex: 4,
     color: '#ecf0f1',
-    fontSize: RFPercentage(6),
     textAlign: 'center',
     textAlignVertical: 'center',
-    fontFamily: 'Roboto_400Regular',
+    fontSize: RFPercentage(14),
+    fontFamily: 'Icon',
   },
 
   background: {
